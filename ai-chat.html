@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat - Dark Mode</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="ai-chat.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Header -->
+        <header class="chat-header">
+            <div class="header-content">
+                <div class="ai-avatar">
+                    <div class="avatar-glow"></div>
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="14" stroke="url(#gradient1)" stroke-width="2"/>
+                        <path d="M12 16L15 19L20 13" stroke="url(#gradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                            <linearGradient id="gradient1" x1="0" y1="0" x2="32" y2="32">
+                                <stop offset="0%" stop-color="#9B78FF"/>
+                                <stop offset="100%" stop-color="#4E9FFE"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="header-text">
+                    <h1>AI Assistant</h1>
+                    <p class="status"><span class="status-dot"></span>Online</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Chat Messages Area -->
+        <div class="chat-messages" id="chatMessages">
+            <div class="welcome-message">
+                <div class="welcome-icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <circle cx="24" cy="24" r="20" stroke="url(#gradient2)" stroke-width="2"/>
+                        <path d="M18 24L22 28L30 18" stroke="url(#gradient2)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                            <linearGradient id="gradient2" x1="0" y1="0" x2="48" y2="48">
+                                <stop offset="0%" stop-color="#9B78FF"/>
+                                <stop offset="50%" stop-color="#4E9FFE"/>
+                                <stop offset="100%" stop-color="#9B78FF"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <h2>Welcome to AI Chat</h2>
+                <p>Ask me anything! I'm here to help you.</p>
+            </div>
+        </div>
+
+        <!-- Typing Indicator -->
+        <div class="typing-indicator" id="typingIndicator">
+            <div class="typing-dot"></div>
+            <div class="typing-dot"></div>
+            <div class="typing-dot"></div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-container">
+            <div class="input-wrapper" id="inputWrapper">
+                <div class="input-gradient-bg"></div>
+                <div class="input-content">
+                    <button class="attach-btn" id="attachBtn" title="Attach file">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M17 9.5L9.5 17C8.12 18.38 5.88 18.38 4.5 17C3.12 15.62 3.12 13.38 4.5 12L12 4.5C12.83 3.67 14.17 3.67 15 4.5C15.83 5.33 15.83 6.67 15 7.5L8.5 14C8.22 14.28 7.78 14.28 7.5 14C7.22 13.72 7.22 13.28 7.5 13L13 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <input
+                        type="text"
+                        class="chat-input"
+                        id="chatInput"
+                        placeholder="Type your message here..."
+                        autocomplete="off"
+                    />
+                    <button class="emoji-btn" id="emojiBtn" title="Add emoji">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/>
+                            <circle cx="7" cy="8" r="1" fill="currentColor"/>
+                            <circle cx="13" cy="8" r="1" fill="currentColor"/>
+                            <path d="M7 12C7 12 8 14 10 14C12 14 13 12 13 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <button class="send-btn" id="sendBtn" title="Send message">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M18 2L9 11M18 2L12 18L9 11M18 2L2 8L9 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="input-border"></div>
+            </div>
+            <div class="input-hints">
+                <span class="hint">Press Enter to send</span>
+                <span class="hint-separator">•</span>
+                <span class="hint">Shift + Enter for new line</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="ai-chat.js"></script>
+</body>
+</html>

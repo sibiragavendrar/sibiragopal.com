@@ -3,6 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
+      - main
       - claude/ai-chat-dark-mode-BQ3KW
   workflow_dispatch:
 

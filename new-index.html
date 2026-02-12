@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sibira Gopal — Product Designer</title>
+    <link rel="shortcut icon" type="image/png" href="thunder.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- GSAP + ScrollTrigger + SplitText -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+    <!-- Lenis smooth scroll -->
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+</head>
+<body>
+    <!-- Custom cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <div class="loader-pixel-grid">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <p class="loader-text">LOADING</p>
+            <div class="loader-bar">
+                <div class="loader-bar-fill" id="loader-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <a href="#" class="nav-logo" data-magnetic>SG</a>
+        <div class="nav-links">
+            <a href="#work" class="nav-link" data-magnetic>Work</a>
+            <a href="#about" class="nav-link" data-magnetic>About</a>
+            <a href="#gallery" class="nav-link" data-magnetic>Gallery</a>
+            <a href="#contact" class="nav-link" data-magnetic>Contact</a>
+        </div>
+        <button class="nav-menu-btn" id="menu-btn" data-magnetic>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-links">
+            <a href="#work" class="mobile-menu-link">Work</a>
+            <a href="#about" class="mobile-menu-link">About</a>
+            <a href="#gallery" class="mobile-menu-link">Gallery</a>
+            <a href="#contact" class="mobile-menu-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-tag">
+                <span class="pixel-tag">PRODUCT DESIGNER</span>
+            </div>
+            <h1 class="hero-title" id="hero-title">
+                <span class="hero-line">Sibira</span>
+                <span class="hero-line">Gopal<span class="hero-dot">.</span></span>
+            </h1>
+            <p class="hero-subtitle" id="hero-subtitle">Crafting meaningful design solutions that benefit society</p>
+            <div class="hero-cta">
+                <a href="#work" class="btn-primary" data-magnetic>
+                    <span>View Work</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M5 15L15 5M15 5H7M15 5V13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="#contact" class="btn-secondary" data-magnetic>
+                    <span>Get in Touch</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+            <span class="scroll-text">SCROLL</span>
+        </div>
+        <!-- Pixel grid background decoration -->
+        <div class="hero-grid-bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- Marquee -->
+    <section class="marquee-section">
+        <div class="marquee">
+            <div class="marquee-track">
+                <span class="marquee-item">User Experience Design</span>
+                <span class="marquee-dot">&#9632;</span>
+                <span class="marquee-item">Product Design</span>
+                <span class="marquee-dot">&#9632;</span>
+                <span class="marquee-item">Brand Identity</span>
+                <span class="marquee-dot">&#9632;</span>
+                <span class="marquee-item">UI/UX Design</span>
+                <span class="marquee-dot">&#9632;</span>
+                <span class="marquee-item">User Experience Design</span>
+                <span class="marquee-dot">&#9632;</span>
+                <span class="marquee-item">Product Design</span>
+                <span class="marquee-dot">&#9632;</span>
+                <span class="marquee-item">Brand Identity</span>
+                <span class="marquee-dot">&#9632;</span>
+                <span class="marquee-item">UI/UX Design</span>
+                <span class="marquee-dot">&#9632;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="section work-section" id="work">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag pixel-tag">SELECTED WORK</span>
+                <h2 class="section-title" data-animate="split">Featured Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: Hustling -->
+                <a href="https://www.behance.net/gallery/159894617/Hustling-Strive-for-Greatness" target="_blank" class="project-card" data-project="hustling">
+                    <div class="project-card-img">
+                        <img src="Hustling.png" alt="Hustling" loading="lazy">
+                        <div class="project-card-overlay">
+                            <span class="project-view-text pixel-tag">VIEW PROJECT</span>
+                        </div>
+                    </div>
+                    <div class="project-card-info">
+                        <div class="project-card-meta">
+                            <span class="project-number">01</span>
+                            <span class="project-category">Social Platform</span>
+                        </div>
+                        <h3 class="project-title">Hustling</h3>
+                        <p class="project-desc">A social media network helping users overcome fear of failure, improve communication, and foster a community of learners.</p>
+                    </div>
+                </a>
+
+                <!-- Project 2: Raga -->
+                <a href="https://www.behance.net/gallery/158905113/Raga-Brand-Design" target="_blank" class="project-card" data-project="raga">
+                    <div class="project-card-img">
+                        <img src="Raga.png" alt="Raga" loading="lazy">
+                        <div class="project-card-overlay">
+                            <span class="project-view-text pixel-tag">VIEW PROJECT</span>
+                        </div>
+                    </div>
+                    <div class="project-card-info">
+                        <div class="project-card-meta">
+                            <span class="project-number">02</span>
+                            <span class="project-category">Brand Design</span>
+                        </div>
+                        <h3 class="project-title">Raga</h3>
+                        <p class="project-desc">A digital streaming service focused on sports. Complete brand design including strategy and identity system.</p>
+                    </div>
+                </a>
+
+                <!-- Project 3: Unravel -->
+                <a href="https://www.behance.net/gallery/165438725/UNRAVEL-App-case-study-and-UIUX-Design" target="_blank" class="project-card" data-project="unravel">
+                    <div class="project-card-img">
+                        <img src="Unravel.png" alt="Unravel" loading="lazy">
+                        <div class="project-card-overlay">
+                            <span class="project-view-text pixel-tag">VIEW PROJECT</span>
+                        </div>
+                    </div>
+                    <div class="project-card-info">
+                        <div class="project-card-meta">
+                            <span class="project-number">03</span>
+                            <span class="project-category">AI / Travel</span>
+                        </div>
+                        <h3 class="project-title">Unravel</h3>
+                        <p class="project-desc">AI-powered tool designing unique, eco-friendly routes and minimizing carbon footprint for responsible travel.</p>
+                    </div>
+                </a>
+
+                <!-- Project 4: Haven -->
+                <div class="project-card" data-project="haven">
+                    <div class="project-card-img">
+                        <img src="Haven.png" alt="Haven" loading="lazy">
+                        <div class="project-card-overlay">
+                            <span class="project-view-text pixel-tag">COMING SOON</span>
+                        </div>
+                    </div>
+                    <div class="project-card-info">
+                        <div class="project-card-meta">
+                            <span class="project-number">04</span>
+                            <span class="project-category">Social Impact</span>
+                        </div>
+                        <h3 class="project-title">Haven</h3>
+                        <p class="project-desc">Housing solution for persons from low socioeconomic backgrounds living near the coast, addressing rising sea levels by 2050.</p>
+                    </div>
+                </div>
+
+                <!-- Project 5: TheatreEats -->
+                <a href="https://www.behance.net/gallery/131778359/TheatreEats-App" target="_blank" class="project-card" data-project="theatreeats">
+                    <div class="project-card-img">
+                        <img src="Theatreeats.png" alt="TheatreEats" loading="lazy">
+                        <div class="project-card-overlay">
+                            <span class="project-view-text pixel-tag">VIEW PROJECT</span>
+                        </div>
+                    </div>
+                    <div class="project-card-info">
+                        <div class="project-card-meta">
+                            <span class="project-number">05</span>
+                            <span class="project-category">Food / Entertainment</span>
+                        </div>
+                        <h3 class="project-title">TheatreEats</h3>
+                        <p class="project-desc">Cinema snack ordering app for effortlessly ordering delicious treats directly from your seat.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="work-cta">
+                <a href="https://www.behance.net/sibiragopal" target="_blank" class="btn-primary" data-magnetic>
+                    <span>View All Work</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M5 15L15 5M15 5H7M15 5V13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-left">
+                    <span class="section-tag pixel-tag">ABOUT</span>
+                    <h2 class="section-title" data-animate="split">Designer,<br>Thinker,<br>Creator.</h2>
+                </div>
+                <div class="about-right">
+                    <p class="about-text" data-animate="fade-up">
+                        I currently design for <strong>Plane</strong>. I also have experience working with ed-tech, fin-tech and consulting startups such as <strong>Skilzen</strong>, <strong>Protium</strong> and <strong>Caravel Tech</strong>.
+                    </p>
+                    <p class="about-text" data-animate="fade-up">
+                        The best part about these experiences is I learn, execute and grow. I strive to create meaningful design solutions that benefit society.
+                    </p>
+                    <div class="about-stats" data-animate="fade-up">
+                        <div class="stat">
+                            <span class="stat-number pixel-tag">5+</span>
+                            <span class="stat-label">Projects Shipped</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number pixel-tag">4+</span>
+                            <span class="stat-label">Companies</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number pixel-tag">3+</span>
+                            <span class="stat-label">Industries</span>
+                        </div>
+                    </div>
+                    <div class="about-skills" data-animate="fade-up">
+                        <span class="skill-pill">Product Design</span>
+                        <span class="skill-pill">UX Research</span>
+                        <span class="skill-pill">Brand Identity</span>
+                        <span class="skill-pill">UI Design</span>
+                        <span class="skill-pill">Prototyping</span>
+                        <span class="skill-pill">Design Systems</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animation Showcase / Gallery -->
+    <section class="section gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag pixel-tag">BEYOND DESIGN</span>
+                <h2 class="section-title" data-animate="split">Capturing Moments</h2>
+                <p class="section-subtitle" data-animate="fade-up">Other than design, I love capturing moments as pictures.</p>
+            </div>
+        </div>
+        <div class="gallery-slider">
+            <div class="gallery-track" id="gallery-track">
+                <div class="gallery-item"><img src="picture1.png" alt="Photography" loading="lazy"></div>
+                <div class="gallery-item"><img src="picture8.png" alt="Photography" loading="lazy"></div>
+                <div class="gallery-item"><img src="picture9.png" alt="Photography" loading="lazy"></div>
+                <div class="gallery-item"><img src="picture11.png" alt="Photography" loading="lazy"></div>
+                <div class="gallery-item"><img src="picture13.png" alt="Photography" loading="lazy"></div>
+                <div class="gallery-item"><img src="picture3.png" alt="Photography" loading="lazy"></div>
+                <div class="gallery-item"><img src="picture14.png" alt="Photography" loading="lazy"></div>
+                <div class="gallery-item"><img src="picture15.png" alt="Photography" loading="lazy"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="contact-inner">
+                <span class="section-tag pixel-tag">GET IN TOUCH</span>
+                <h2 class="contact-title" data-animate="split">Let's create<br>something great.</h2>
+                <p class="contact-subtitle" data-animate="fade-up">Always up for a design conversation.</p>
+                <a href="mailto:sibirasathya@gmail.com" class="contact-email" data-magnetic data-animate="fade-up">
+                    sibirasathya@gmail.com
+                </a>
+                <div class="socials" data-animate="fade-up">
+                    <a href="https://www.behance.net/sibiragopal" target="_blank" class="social-link" data-magnetic>
+                        <span>Behance</span>
+                        <svg width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M5 15L15 5M15 5H7M15 5V13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sibira-gopal-2186b31bb/" target="_blank" class="social-link" data-magnetic>
+                        <span>LinkedIn</span>
+                        <svg width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M5 15L15 5M15 5H7M15 5V13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <a href="https://twitter.com/AshwathSibira" target="_blank" class="social-link" data-magnetic>
+                        <span>Twitter</span>
+                        <svg width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M5 15L15 5M15 5H7M15 5V13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <a href="https://dribbble.com/Sibira" target="_blank" class="social-link" data-magnetic>
+                        <span>Dribbble</span>
+                        <svg width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M5 15L15 5M15 5H7M15 5V13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span class="footer-logo pixel-tag">SG</span>
+            <p class="footer-credit">Made with love, passion and God's blessings.</p>
+            <p class="footer-year">&copy; 2025 Sibira Gopal</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

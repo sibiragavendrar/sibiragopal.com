@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sibira Gopal — Product Designer creating meaningful design solutions. Currently designing at Plane. Portfolio featuring UX, brand design, and product work.">
     <title>Sibira Gopal — Product Designer</title>
     <link rel="shortcut icon" type="image/png" href="thunder.png">
     <link rel="stylesheet" href="portfolio-v2.css">
@@ -12,28 +13,45 @@
 </head>
 <body>
 
+    <!-- Skip to content -->
+    <a href="#selected-works" class="skip-to-content">Skip to content</a>
+
     <!-- Navigation -->
-    <nav class="nav">
+    <nav class="nav" role="navigation" aria-label="Main navigation">
         <div class="nav-inner">
-            <a href="#" class="nav-logo">Sibira Gopal</a>
+            <a href="#top" class="nav-logo">Sibira Gopal</a>
             <div class="nav-links">
                 <a href="#selected-works" class="nav-link">Work</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="mailto:sibirasathya@gmail.com" class="nav-link">Contact</a>
-                <a href="https://www.behance.net/sibiragopal" target="_blank" class="nav-link nav-link-arrow">
+                <a href="https://www.behance.net/sibiragopal" target="_blank" rel="noopener noreferrer" class="nav-link nav-link-arrow">
                     Behance
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </a>
             </div>
+            <button class="nav-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+        <div class="mobile-menu-links">
+            <a href="#selected-works" class="mobile-menu-link">Work</a>
+            <a href="#about" class="mobile-menu-link">About</a>
+            <a href="mailto:sibirasathya@gmail.com" class="mobile-menu-link">Contact</a>
+            <a href="https://www.behance.net/sibiragopal" target="_blank" rel="noopener noreferrer" class="mobile-menu-link">Behance</a>
+        </div>
+    </div>
+
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="top">
         <div class="hero-inner">
             <div class="hero-top">
                 <div class="hero-location">
-                    <span class="hero-location-dot"></span>
+                    <span class="hero-location-dot" aria-hidden="true"></span>
                     Based in Hyderabad
                 </div>
             </div>
@@ -47,7 +65,7 @@
                 <div class="hero-bio">
                     <p>A Product Designer who strives to create meaningful design solutions that benefit society. Currently designing at <strong>Plane</strong>.</p>
                 </div>
-                <div class="hero-scroll">
+                <div class="hero-scroll" aria-hidden="true">
                     <div class="hero-scroll-line"></div>
                     <span>Scroll</span>
                 </div>
@@ -61,7 +79,7 @@
             <h2 class="section-heading">Selected Works</h2>
             <div class="works-list">
                 <!-- Hustling -->
-                <a href="https://www.behance.net/gallery/159894617/Hustling-Strive-for-Greatness" target="_blank" class="work-item" data-image="Hustling.png">
+                <a href="https://www.behance.net/gallery/159894617/Hustling-Strive-for-Greatness" target="_blank" rel="noopener noreferrer" class="work-item" data-image="Hustling.png">
                     <div class="work-item-inner">
                         <div class="work-item-left">
                             <span class="work-number">01</span>
@@ -71,17 +89,17 @@
                             <p class="work-desc">A social media network helping users overcome fear of failure and foster a community of learners.</p>
                             <span class="work-category">Social Platform</span>
                         </div>
-                        <div class="work-arrow">
+                        <div class="work-arrow" aria-hidden="true">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                         </div>
                     </div>
-                    <div class="work-item-hover-image">
-                        <img src="Hustling.png" alt="Hustling">
+                    <div class="work-item-hover-image" aria-hidden="true">
+                        <img src="Hustling.png" alt="">
                     </div>
                 </a>
 
                 <!-- Raga -->
-                <a href="https://www.behance.net/gallery/158905113/Raga-Brand-Design" target="_blank" class="work-item" data-image="Raga.png">
+                <a href="https://www.behance.net/gallery/158905113/Raga-Brand-Design" target="_blank" rel="noopener noreferrer" class="work-item" data-image="Raga.png">
                     <div class="work-item-inner">
                         <div class="work-item-left">
                             <span class="work-number">02</span>
@@ -91,17 +109,17 @@
                             <p class="work-desc">A digital streaming service focused on sports. Complete brand design including strategy and identity.</p>
                             <span class="work-category">Brand Design</span>
                         </div>
-                        <div class="work-arrow">
+                        <div class="work-arrow" aria-hidden="true">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                         </div>
                     </div>
-                    <div class="work-item-hover-image">
-                        <img src="Raga.png" alt="Raga">
+                    <div class="work-item-hover-image" aria-hidden="true">
+                        <img src="Raga.png" alt="">
                     </div>
                 </a>
 
                 <!-- Unravel -->
-                <a href="https://www.behance.net/gallery/165438725/UNRAVEL-App-case-study-and-UIUX-Design" target="_blank" class="work-item" data-image="Unravel.png">
+                <a href="https://www.behance.net/gallery/165438725/UNRAVEL-App-case-study-and-UIUX-Design" target="_blank" rel="noopener noreferrer" class="work-item" data-image="Unravel.png">
                     <div class="work-item-inner">
                         <div class="work-item-left">
                             <span class="work-number">03</span>
@@ -111,12 +129,12 @@
                             <p class="work-desc">AI-powered tool designing unique, eco-friendly routes and minimizing carbon footprint.</p>
                             <span class="work-category">AI / Travel</span>
                         </div>
-                        <div class="work-arrow">
+                        <div class="work-arrow" aria-hidden="true">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                         </div>
                     </div>
-                    <div class="work-item-hover-image">
-                        <img src="Unravel.png" alt="Unravel">
+                    <div class="work-item-hover-image" aria-hidden="true">
+                        <img src="Unravel.png" alt="">
                     </div>
                 </a>
 
@@ -135,13 +153,13 @@
                             <span class="coming-soon-badge">Coming Soon</span>
                         </div>
                     </div>
-                    <div class="work-item-hover-image">
-                        <img src="Haven.png" alt="Haven">
+                    <div class="work-item-hover-image" aria-hidden="true">
+                        <img src="Haven.png" alt="">
                     </div>
                 </div>
 
                 <!-- TheatreEats -->
-                <a href="https://www.behance.net/gallery/131778359/TheatreEats-App" target="_blank" class="work-item" data-image="Theatreeats.png">
+                <a href="https://www.behance.net/gallery/131778359/TheatreEats-App" target="_blank" rel="noopener noreferrer" class="work-item" data-image="Theatreeats.png">
                     <div class="work-item-inner">
                         <div class="work-item-left">
                             <span class="work-number">05</span>
@@ -151,12 +169,12 @@
                             <p class="work-desc">Cinema snack ordering app for effortlessly ordering delicious treats from your seat.</p>
                             <span class="work-category">Food / Entertainment</span>
                         </div>
-                        <div class="work-arrow">
+                        <div class="work-arrow" aria-hidden="true">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                         </div>
                     </div>
-                    <div class="work-item-hover-image">
-                        <img src="Theatreeats.png" alt="TheatreEats">
+                    <div class="work-item-hover-image" aria-hidden="true">
+                        <img src="Theatreeats.png" alt="">
                     </div>
                 </a>
             </div>
@@ -168,7 +186,7 @@
         <div class="section-container">
             <h2 class="section-heading">Other Works</h2>
             <div class="other-works-grid">
-                <a href="https://www.behance.net/gallery/158905113/Raga-Brand-Design" target="_blank" class="other-work-card">
+                <a href="https://www.behance.net/gallery/158905113/Raga-Brand-Design" target="_blank" rel="noopener noreferrer" class="other-work-card">
                     <div class="other-work-image">
                         <img src="Raga.png" alt="Raga Brand">
                     </div>
@@ -177,7 +195,7 @@
                         <p>Complete brand identity and design system for a sports streaming platform.</p>
                     </div>
                 </a>
-                <a href="https://www.behance.net/gallery/131778359/TheatreEats-App" target="_blank" class="other-work-card">
+                <a href="https://www.behance.net/gallery/131778359/TheatreEats-App" target="_blank" rel="noopener noreferrer" class="other-work-card">
                     <div class="other-work-image">
                         <img src="Theatreeats.png" alt="TheatreEats">
                     </div>
@@ -186,7 +204,7 @@
                         <p>Mobile app design for seamless cinema snack ordering experience.</p>
                     </div>
                 </a>
-                <a href="https://www.behance.net/gallery/165438725/UNRAVEL-App-case-study-and-UIUX-Design" target="_blank" class="other-work-card">
+                <a href="https://www.behance.net/gallery/165438725/UNRAVEL-App-case-study-and-UIUX-Design" target="_blank" rel="noopener noreferrer" class="other-work-card">
                     <div class="other-work-image">
                         <img src="Unravel.png" alt="Unravel">
                     </div>
@@ -258,37 +276,39 @@
             </div>
             <div class="footer-bottom">
                 <div class="footer-socials">
-                    <a href="https://www.behance.net/sibiragopal" target="_blank">Behance</a>
-                    <a href="https://www.linkedin.com/in/sibira-gopal-2186b31bb/" target="_blank">LinkedIn</a>
-                    <a href="https://twitter.com/AshwathSibira" target="_blank">Twitter</a>
-                    <a href="https://dribbble.com/Sibira" target="_blank">Dribbble</a>
+                    <a href="https://www.behance.net/sibiragopal" target="_blank" rel="noopener noreferrer">Behance</a>
+                    <a href="https://www.linkedin.com/in/sibira-gopal-2186b31bb/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://twitter.com/AshwathSibira" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    <a href="https://dribbble.com/Sibira" target="_blank" rel="noopener noreferrer">Dribbble</a>
                 </div>
-                <p class="footer-credit">Made with love, passion and God's blessings. &copy; 2025 Sibira Gopal</p>
+                <p class="footer-credit">Made with love, passion and God's blessings.</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Work item hover image follow cursor
-        document.querySelectorAll('.work-item').forEach(item => {
-            const hoverImage = item.querySelector('.work-item-hover-image');
+        // Work item hover image follow cursor (desktop only)
+        if (window.matchMedia('(hover: hover)').matches) {
+            document.querySelectorAll('.work-item').forEach(item => {
+                const hoverImage = item.querySelector('.work-item-hover-image');
 
-            item.addEventListener('mouseenter', () => {
-                hoverImage.style.opacity = '1';
-            });
+                item.addEventListener('mouseenter', () => {
+                    hoverImage.style.opacity = '1';
+                });
 
-            item.addEventListener('mouseleave', () => {
-                hoverImage.style.opacity = '0';
-            });
+                item.addEventListener('mouseleave', () => {
+                    hoverImage.style.opacity = '0';
+                });
 
-            item.addEventListener('mousemove', (e) => {
-                const rect = item.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                hoverImage.style.left = x + 'px';
-                hoverImage.style.top = y + 'px';
+                item.addEventListener('mousemove', (e) => {
+                    const rect = item.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    hoverImage.style.left = x + 'px';
+                    hoverImage.style.top = y + 'px';
+                });
             });
-        });
+        }
 
         // Quote section fade on scroll
         const quoteSection = document.querySelector('.quote-section');
@@ -333,6 +353,28 @@
                 nav.classList.remove('nav-scrolled');
             }
         });
+
+        // Mobile menu toggle
+        const menuBtn = document.querySelector('.nav-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                const isOpen = mobileMenu.classList.toggle('active');
+                menuBtn.classList.toggle('active');
+                menuBtn.setAttribute('aria-expanded', isOpen);
+                document.body.style.overflow = isOpen ? 'hidden' : '';
+            });
+
+            mobileMenu.querySelectorAll('.mobile-menu-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('active');
+                    menuBtn.classList.remove('active');
+                    menuBtn.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                });
+            });
+        }
     </script>
 
 </body>
